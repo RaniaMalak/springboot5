@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+
+<a href="/">Show the whole thing you will do</a><br/>
+Title:<span th:text="${todo.title}"></span><br/>
+Content:<p th:text="${todo.content}"></p><br/>
+<a th:href="@{/delete/{id}(id=${todo.id})}">Delete this item</a>
+
+</div>
+</body>
+</html>
